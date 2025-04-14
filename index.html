@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      margin: -20px;
+      padding: 70px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 70px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .upload-box {
+      position: top;
+      left: 20px;
+      top: 20px;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      border: 2px dashed #aaa;
+      border-radius: 10px;
+      text-align: left;
+      padding: 45px;
+      background-color: #fafafa;
+      margin-left: 920px;
+      margin-top: -120px;
+    }
+
+    .upload-box input {
+      display: flex;
+      
+    }
+
+    .upload-box label {
+      display: block;
+      cursor: pointer;
+      font-size: 10px;
+      margin-top: -000px;
+    }
+
+    .upload-box small {
+      display: block;
+      margin-top: -1035px;
+      color: #777;
+      margin-bottom: -40px;
+      font-size: 7px;
+    }
+    .upload-box input{
+        margin-top: 25px;
+      color: #777;
+      margin-bottom: 900px;
+      font-size: 10px;
+      margin-right: -100px;
+      padding-left: 10px;
+      margin-left: -105px;
+      padding: 3px;
+    
+
+    }
+
+    fieldset {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+      background: #fff;
+      position: absolute;
+      top: -14px;
+      left: 20px;
+      bottom: 20pxx;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-size: 14px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    input, select {
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Student Registration</h2>
+
+  <!-- Upload Box Top-Right -->
+  <div class="upload-box">
+    <label for="imageUpload">
+      📤 Upload Photo
+      <input type="file" id="imageUpload" accept="image/*">
+      <small>Max 512KB<br>200x200 px<br>JPG/PNG</small>
+    </label>
+  </div>
+<br>
+<br>
+<br>
+
+  <!-- Fieldset 1: Personal Info -->
+  <fieldset>
+    <legend>Personal Information</legend>
+    <div class="form-grid">
+      <div class="form-group">
+        <label for="firstName">*First Name</label>
+        <input type="text" id="firstName">
+      </div>
+      <div class="form-group">
+        <label for="middleName">Middle Name</label>
+        <input type="text" id="middleName">
+      </div>
+      <div class="form-group">
+        <label for="lastName">*Last Name</label>
+        <input type="text" id="lastName">
+      </div>
+      <div class="form-group">
+        <label for="email">*Email</label>
+        <input type="email" id="email">
+      </div>
+      <div class="form-group">
+        <label for="contact">*Contact No</label>
+        <input type="text" id="contact">
+      </div>
+      <div class="form-group">
+        <label for="gender">*Gender</label>
+        <select id="gender">
+          <option selected disabled>Select</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+    </div>
+  </fieldset>
+
+  <!-- Fieldset 2: Birth & Identity Info -->
+  <fieldset>
+    <legend>Birth & Identity</legend>
+    <div class="form-grid">
+      <div class="form-group">
+        <label for="dobBs">Date of Birth (BS)</label>
+        <input type="text" id="dobBs" placeholder="YYYY-MM-DD">
+      </div>
+      <div class="form-group">
+        <label for="dobAd">Date of Birth (AD)</label>
+        <input type="date" id="dobAd">
+      </div>
+      <div class="form-group">
+        <label for="bloodGroup">Blood Group</label>
+        <select id="bloodGroup">
+          <option selected disabled>Select</option>
+          <option>A+</option><option>A-</option>
+          <option>B+</option><option>B-</option>
+          <option>O+</option><option>O-</option>
+          <option>AB+</option><option>AB-</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="ethnicity">Ethnicity</label>
+        <input type="text" id="ethnicity">
+      </div>
+      <div class="form-group">
+        <label for="religion">Religion (Optional)</label>
+        <input type="text" id="religion">
+      </div>
+    </div>
+  </fieldset>
+<!-- Fieldset 3: Personal Info -->
+<fieldset>
+    <legend>Personal Information</legend>
+    <div class="form-grid">
+      <div class="form-group">
+        <label for="firstName">*First Name</label>
+        <input type="text" id="firstName">
+      </div>
+      <div class="form-group">
+        <label for="middleName">Middle Name</label>
+        <input type="text" id="middleName">
+      </div>
+      <div class="form-group">
+        <label for="lastName">*Last Name</label>
+        <input type="text" id="lastName">
+      </div>
+      <div class="form-group">
+        <label for="email">*Email</label>
+        <input type="email" id="email">
+      </div>
+      <div class="form-group">
+        <label for="contact">*Contact No</label>
+        <input type="text" id="contact">
+      </div>
+      <div class="form-group">
+        <label for="gender">*Gender</label>
+        <select id="gender">
+          <option selected disabled>Select</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+      </div>
+  </fieldset>
+</body>
+</html>
